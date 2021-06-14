@@ -42,7 +42,7 @@ public class EstablishmentViewModel extends ViewModel{
         this.restNames = tmp;
         Log.i("Names", restNames.toString());
     }
-
+    //Return restaurant names from Firestore
     public ArrayList getRestaurantNames()
     {
         CollectionReference mainRef = firestore.collection("Establishments");

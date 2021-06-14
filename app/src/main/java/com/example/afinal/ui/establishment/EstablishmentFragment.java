@@ -58,8 +58,9 @@ public class EstablishmentFragment extends Fragment {
 
     @Override
     public void onStart() {
+        // Retrieve data from establishmentViewModel and then display(Returned value is null)
         super.onStart();
-        establishmentViewModel.getRestaurantNames();
+        restNames = establishmentViewModel.getRestaurantNames();
     }
 
     @Override
